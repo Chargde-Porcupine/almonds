@@ -1,6 +1,20 @@
 function vote1(){
-  document.cookie = "vote=1" 
+  if(document.cookie=="vote=2"){
+    Console.log("switch 1");
+    document.cookie = "vote=1"
+  } else if(document.cookie===""){
+    document.cookie = "vote=1";
+    Console.log("vote 1")
+  }
+  
 }
 function vote2(){
-  document.cookie = "vote=2" 
+  if(document.cookie=="vote=1"){
+    Console.log("switch 2");
+    document.cookie = "vote=2"
+  } else if(document.cookie===""){
+    document.cookie = "vote=2";
+    Console.log("vote 2")
+  }
+  
 }
