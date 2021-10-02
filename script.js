@@ -16,6 +16,7 @@ function vote2(){
   } else if(document.cookie===""){
     document.cookie = "vote=2";
     console.log("vote 2");
+    console.log(secrets.API_KEY);
   }
   
 }
